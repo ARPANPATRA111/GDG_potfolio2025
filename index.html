@@ -22,6 +22,136 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="shortcut icon" href="./images/portfolio.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .pencil-icon {
+            margin-left: 0.5rem;
+            font-size: 30px;
+        }
+
+        .projects-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .tech-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tag {
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+        }
+
+        .html {
+            background: #ffebe9;
+            color: #ff4d4d;
+        }
+
+        .css {
+            background: #e6f3ff;
+            color: #0066cc;
+        }
+
+        .javascript {
+            background: #fff3dc;
+            color: #cc8800;
+        }
+
+        .react {
+            background: #e6f9ff;
+            color: #00a3cc;
+        }
+
+        .mongodb {
+            background: #e6ffe6;
+            color: #00b300;
+        }
+
+        .nodejs {
+            background: #e6fff0;
+            color: #00994d;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -32,7 +162,7 @@
         <ul class="nav-links">
             <li><a href="#home"> HOME </a></li>
             <li><a href="#about"> ABOUT </a></li>
-            <li><a href="#work"> WORK </a></li>
+            <li><a href="#w"> WORK </a></li>
             <li><a href="#contact"> CONTACT</a></li>
         </ul>
     </div>
@@ -135,6 +265,134 @@
         </div>
 
     </div>
+
+    <section class="projects-section" id="w">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <span class="pencil-icon">✏️</span>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="./images/project-01.webp" class="project-img" alt="Stock Market Portfolio App" loading="lazy">
+                <div class="project-content">
+                    <h2>Stock Market Portfolio App</h2>
+                    <p class="project-content-desc">
+                        An application to track and manage your stock investments.
+                    </p>
+                    <h3>Developed with:</h3>
+                    <ul class="project-techno">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="js">JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="github-link" target="_blank">
+                            <img src="./images/github.webp" alt="GitHub">
+                        </a>
+                        <a href="#" class="live-link" target="_blank">
+                            <img src="./images/web.webp" alt="Live Demo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/project-02.webp" class="project-img" alt="Stock Market Portfolio App" loading="lazy">
+                <div class="project-content">
+                    <h2>Crypto Price Tracker</h2>
+                    <p class="project-content-desc">
+                        A tool to track the real-time prices of various cryptocurrencies. Provides live updates
+                        on prices, market cap, and volume changes.
+                    </p>
+                    <h3>Developed with:</h3>
+                    <ul class="project-techno">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="js">JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="github-link" target="_blank">
+                            <img src="./images/github.webp" alt="GitHub">
+                        </a>
+                        <a href="#" class="live-link" target="_blank">
+                            <img src="./images/web.webp" alt="Live Demo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/project-04.webp" class="project-img" alt="E-commerce Website" loading="lazy">
+                <div class="project-content">
+                    <h2>Fashion Hub</h2>
+                    <p class="project-content-desc">
+                        A modern fashion e-commerce website where users can browse and shop clothing, shoes, and
+                        accessories.
+                    </p>
+                    <h3>Developed with:</h3>
+                    <ul class="project-techno">
+                        <li class="react">React</li>
+                        <li class="css">CSS</li>
+                        <li class="nodejs">Node.js</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="github-link" target="_blank">
+                            <img src="./images/github.webp" alt="GitHub">
+                        </a>
+                        <a href="#" class="live-link" target="_blank">
+                            <img src="./images/web.webp" alt="Live Demo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/project-03.webp" class="project-img" alt="E-commerce Website" loading="lazy">
+                <div class="project-content">
+                    <h2>Online Grocery Store</h2>
+                    <p class="project-content-desc">
+                        An e-commerce platform for grocery shopping. Users can browse products, add to the cart,
+                        and proceed with easy checkouts.
+                    </p>
+                    <h3>Developed with:</h3>
+                    <ul class="project-techno">
+                        <li class="react">React</li>
+                        <li class="mongodb">MongoDB</li>
+                        <li class="nodejs">Node.js</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="github-link" target="_blank">
+                            <img src="./images/github.webp" alt="GitHub">
+                        </a>
+                        <a href="#" class="live-link" target="_blank">
+                            <img src="./images/web.webp" alt="Live Demo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer flex" id="contact">
+        <div class="footer-left">
+            <div class="name">ARPAN <span class="surname">Patra</span></div>
+            <p>&copy; 2025 Arpan Patra. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.linkedin.com" target="_blank" class="social-link" rel="noopener">
+                <img src="./images/linkedIN.webp" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://leetcode.com" target="_blank" class="social-link" rel="noopener">
+                <img src="./images/leetcode.webp" alt="LeetCode" class="social-icon">
+            </a>
+            <a href="https://github.com" target="_blank" class="social-link" rel="noopener">
+                <img src="./images/github.webp" alt="GitHub" class="social-icon">
+            </a>
+        </div>
+    </footer>
 
 
 
