@@ -1,47 +1,29 @@
-// basic color
+# Portfolio Pro: Build, Code, Showcase !
+Welcome to my portfolio project! This portfolio was developed during the Portfolio Pro: Build Code Showcase event, a 2-day interactive workshop where students built their portfolios alongside an expert instructor.
 
-primary-color: #eaca14;
+## Project Overview
+This project demonstrates my abilities in web development, showcasing a collection of my work, skills, and experiences. The portfolio includes sections such as About Me, Projects, Skills, and Contact Information.
 
-hover-color: #eaca1441;
+## Features
 
-// font to be used
+- Interactive Elements: Includes animations, hover effects, and interactive buttons for a dynamic user experience.
 
-font-family: "Inter", serif , "Playwrite IS", serif;
+- Clean Code: Follows best practices and is well-documented for ease of understanding and maintenance.
 
-// cdn link for typed.js
-"https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+## Technologies Used
+- HTML5: For structuring the content.
 
-    .html {
-      background-color: #ffe4e1;
-      color: #a52a2a;
-    }
+- CSS3: For styling and layout.
 
-    .react {
-        background-color: #d1f7ff;
-        color: #087ea4;
-    }
+- JavaScript: For interactivity and dynamic content.
 
-    .nodejs {
-        background-color: #d3f9d8;
-        color: #2c5f2d;
-    }
+## Contributing
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
 
-    .express {
-        background-color: #e9e9e9;
-        color: #2b2b2b;
-    }
+## Acknowledgements
+*Instructor:* Special thanks to Saara Khan for guiding us through this event.
 
-    .mongodb {
-        background-color: #d1ffd1;
-        color: #116530;
-    }
+*Event Organizer:* Thanks to GDG IIPS for hosting the event Portfolio Pro: Build, Code, Showcase!.
 
-    .js {
-        background-color: #fefcbf;
-        color: #744210;
-    }
+### Feel free to customize this template to better fit your project details and preferences. Happy coding! 🚀
 
-    .css {
-        background-color: #bee3f8;
-        color: #2a4365;
-    }
